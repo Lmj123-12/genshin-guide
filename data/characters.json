@@ -1,0 +1,93 @@
+// data/characters.json
+[
+  {
+    "id": "zhongli",
+    "name": "钟离",
+    "element": "岩",
+    "rarity": 5,
+    "weapon_type": "长柄武器",
+    "region": "璃月",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "hutao",
+    "name": "胡桃",
+    "element": "火",
+    "rarity": 5,
+    "weapon_type": "长柄武器",
+    "region": "璃月",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "raiden_shogun",
+    "name": "雷电将军",
+    "element": "雷",
+    "rarity": 5,
+    "weapon_type": "长柄武器",
+    "region": "稻妻",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "kaedehara_kazuha",
+    "name": "枫原万叶",
+    "element": "风",
+    "rarity": 5,
+    "weapon_type": "单手剑",
+    "region": "稻妻",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "yelan",
+    "name": "夜兰",
+    "element": "水",
+    "rarity": 5,
+    "weapon_type": "弓",
+    "region": "璃月",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "nahida",
+    "name": "纳西妲",
+    "element": "草",
+    "rarity": 5,
+    "weapon_type": "法器",
+    "region": "须弥",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "sangonomiya_kokomi",
+    "name": "珊瑚宫心海",
+    "element": "水",
+    "rarity": 5,
+    "weapon_type": "法器",
+    "region": "稻妻",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "ganyu",
+    "name": "甘雨",
+    "element": "冰",
+    "rarity": 5,
+    "weapon_type": "弓",
+    "region": "璃月",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "kamisato_ayaka",
+    "name": "神里绫华",
+    "element": "冰",
+    "rarity": 5,
+    "weapon_type": "单手剑",
+    "region": "稻妻",
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "id": "furina",
+    "name": "芙宁娜",
+    "element": "水",
+    "rarity": 5,
+    "weapon_type": "单手剑",
+    "region": "枫丹",
+    "avatar": "https://via.placeholder.com/100"
+  }
+]
