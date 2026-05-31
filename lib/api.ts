@@ -21,5 +21,12 @@ export async function getCharacters(): Promise<Character[]> {
     return []
   }
 
-  return data as Character[]
+  return (data || []).map((char) => ({
+    ...char,
+    name: char.name ?? '',
+    element: char.element ?? '',
+    weapon_type: char.weapon_type ?? '',
+    region: char.region ?? '',
+    avatar: char.avatar ?? '',
+  }))
 }
