@@ -4,12 +4,12 @@ import { useState } from 'react'
 
 interface Character {
   id: string
-  name: string
-  element: string
-  rarity: number
-  weapon_type: string
-  region: string
-  avatar: string
+  name?: string
+  element?: string
+  rarity?: number
+  weapon_type?: string
+  region?: string
+  avatar?: string
 }
 
 const elements = ['全部', '火', '水', '风', '雷', '冰', '岩', '草']
@@ -38,7 +38,7 @@ export default function CharacterList({ characters }: { characters: Character[] 
   const filteredCharacters =
     selectedElement === '全部'
       ? characters
-      : characters.filter((char) => char.element === selectedElement)
+      : characters.filter((char) => (char.element ?? '') === selectedElement)
 
   return (
     <>
@@ -68,16 +68,16 @@ export default function CharacterList({ characters }: { characters: Character[] 
             className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center transition hover:shadow-lg hover:-translate-y-1"
           >
             <img
-              src={char.avatar}
-              alt={char.name}
+              src={char.avatar ?? 'https://via.placeholder.com/100'}
+              alt={char.name ?? '角色'}
               className="w-24 h-24 rounded-full mb-3 object-cover border-2 border-gray-200"
             />
-            <h2 className="text-lg font-semibold mb-1">{char.name}</h2>
+            <h2 className="text-lg font-semibold mb-1">{char.name ?? '未知'}</h2>
             <div className="flex items-center gap-1 text-yellow-500 mb-1">
-              {'★'.repeat(char.rarity)}
-              <span className="text-gray-400 text-sm">{char.rarity}星</span>
+              {'★'.repeat(char.rarity ?? 0)}
+              <span className="text-gray-400 text-sm">{char.rarity ?? '?'}星</span>
             </div>
-            <span className="text-sm text-gray-600">{char.element}元素</span>
+            <span className="text-sm text-gray-600">{char.element ?? '未知'}元素</span>
           </div>
         ))}
       </div>
